@@ -3,7 +3,7 @@ import subprocess
 import re
 
 def createSubInterface(dev, vlanid, **addr):
-	logging.debug('\n________________________\n\nstart func\n\n________________________')
+	#logging.debug('\n________________________\n\nstart func\n\n________________________')
 	ip=''
 	mac=''
 	if len(addr) > 2:
