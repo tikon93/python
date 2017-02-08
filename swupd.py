@@ -49,7 +49,6 @@ elif re.match('[1-2]?[0-9]?[0-9]\.[1-2]?[0-9]?[0-9]\.[1-2]?[0-9]?[0-9]\.[1-2]?[0
 elif re.match('[1-2]?[0-9]?[0-9]\.[1-2]?[0-9]?[0-9]\.[1-2]?[0-9]?[0-9]\.[1-2]?[0-9]?[0-9]$',TFTP_IP)==None:
     print('Incorrect TFTP IP address format. Check it.\n')
     sys.exit(1)
-
 else:
 	print('Start test for IP '+DUT_IP+'\n')
 
