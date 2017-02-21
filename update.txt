@@ -1,0 +1,20 @@
+def update(l):
+	prev = l[-1]
+	next=''
+	i = 0
+	count = 1
+	value=prev[0]
+	while i < len(prev):
+		try:
+			if value==prev[i+1]:
+				count+=1
+			else:
+				next+=str(count)+str(value)
+				value=prev[i+1]
+				count=1				
+		except:
+			next+=str(count)+str(value)
+		finally:
+			i+=1
+	l.append(next)
+	return(l)
